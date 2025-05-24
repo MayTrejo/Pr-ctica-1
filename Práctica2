@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+
+print('Aquí inicia la práctica')
+print('Cantidad de coordenadas:')
+
+# Coordenadas que forman la letra T
+x = [1, 9, 9, 6, 6, 4, 4, 1, 1]
+y = [8, 8, 7, 7, 1, 1, 7, 7, 8]
+
+# Imprimir coordenadas como si se ingresaran
+for i in range(len(x)):
+    print('Ingrese coordenada', i + 1)
+    print('x =', x[i])
+    print('y =', y[i])
+
+# Graficar la letra T
+plt.fill(x, y, color='violet')    # Color lila
+plt.plot(x, y, color='violet')    # Contorno lila
+
+# Mostrar ejes (sí)
+plt.axis('equal')
+plt.grid(False)   # Sin cuadrícula, solo ejes
+plt.xlabel("Eje X")
+plt.ylabel("Eje Y")
+plt.title("Letra T en color lila")
+
+plt.show()
